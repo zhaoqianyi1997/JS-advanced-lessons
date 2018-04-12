@@ -1,4 +1,4 @@
-//立即执行表达式 常见形式
+//立即执行表达式常见形式
 (function max( x,y){
     console.log("the max is",x>y?x:y);
 }(2,3));
@@ -17,7 +17,7 @@
 
 
 
-// 其他形式的IIFE 与运算符结合的写法
+// 其他形式的IIFE与运算符结合的写法
 var i = function(){
     return 10;
 }(); //i为10
