@@ -109,7 +109,7 @@ function f(){
 }
 var tmp = f();
 tmp[3]();//tmp[0]()...tmp[9]()都为9
-/避免闭包中非期望的变量共享问题，如下例子
+//避免闭包中非期望的变量共享问题，如下例子
 var tabs = document.getElementsByClassName('tabs')[0].children;
 var contents = document.getElementsByClassName('show')[0];
 
@@ -149,7 +149,7 @@ for (var i = 0; i < 5; i++) {
     }, 1000*i);
 }
 //console.log("i：",i);
-*/
+
 
 
 //通过IIFE解决变量共享问题
