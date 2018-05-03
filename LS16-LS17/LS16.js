@@ -78,8 +78,8 @@ function Person(name){
         console.log(this.name);
     }
 }
-var p1=new Person("帅杰");
-p1.showme();//帅杰   正常写法   以下均是变形
+var p1=new Person("123");
+p1.showme();//123   正常写法   以下均是变形
 
 
 function Person(name){
@@ -88,9 +88,9 @@ function Person(name){
         console.log(this.name);
     }
 }
-var p1=new Person("帅杰");
+var p1=new Person("123");
 p1.showme();//Uncaught TypeError: p1.showme is not a function
-showme();//帅杰   定义在全局上
+showme();//123  定义在全局上
 
 function Person(name){
     this.name=name;
@@ -98,8 +98,8 @@ function Person(name){
         console.log(name);//闭包
     }
 }
-var p1=new Person("帅杰");
-p1.showme();//帅杰       闭包，  函数没有被释放掉   
+var p1=new Person("123");
+p1.showme();//123       闭包，  函数没有被释放掉   
 
 
 // 05
