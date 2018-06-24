@@ -42,7 +42,7 @@ var sym = Symbol('My symbol');
 var mySymbol = Symbol();
 // 第一种写法
 var a = {};
-a[mySymbol] = 'Hello!';//注意中括号内不要加引号，后面介绍加引号和不加引号的区别
+a[mySymbol] = 'Hello!';//括号内不加引号
 // 第二种写法
 var a = {
     [mySymbol]: 'Hello!'
@@ -147,7 +147,7 @@ console.log([...(new Set([1, 2, 3, 4, 5]))]);//[1, 2, 3, 4, 5]
 console.log(...(new Set([1, 2, 3, 4, 5])));//1, 2, 3, 4, 5
 
 var set = new Set(['red', 'green', 'blue']);
-console.log(typeof set.keys());//注意是什么类型，是否可迭代，是否可用for...of遍历
+console.log(typeof set.keys());
 console.log(typeof set.values());
 console.log(typeof set.entries());
 
